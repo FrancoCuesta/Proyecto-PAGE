@@ -1,0 +1,182 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+    - Oye
+    - Hola
+    - hola
+    - Hola a todos
+    - Buenos días
+    - buenas noches
+    - moño
+    - hola
+    - vamos
+    - hola amigo
+    - Buenos días
+    - buenas noches
+    - buenas tardes
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+    - bueno por
+    te veo luego
+    - buenas noches
+    - adiós
+    - adiós
+    - que tengas un lindo día
+    - Ya nos veremos
+    - adiós
+    - te veo luego
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+    - sí
+    - Por supuesto
+    - por supuesto
+    - Eso suena bien
+    - correcto
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+    - nunca
+    - No me parece
+    - no me gusta eso
+    - de ninguna manera
+    - realmente no
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+    - Perfecto
+    - estupendo
+    - increíble
+    - sentirse como un rey
+    - maravilloso
+    - me siento muy bien
+    - soy genial
+    - Soy asombroso
+    - Voy a salvar el mundo.
+    - súper emocionado
+    - extremadamente bueno
+    tan tan perfecto
+    - tan bueno
+    - tan perfecto
+    - my day was beautifull
+    - I am happy
+    - I don't feel very well
+    - I am disappointed
+    - super happy
+    - I'm so happy
+    - happy
+    - very happy
+    - happy
+    - good
+    - very good
+    - extremly happy
+    - so happy
+    - mi dia fue hermoso
+    - Estoy Feliz
+    - me siento muy bien
+    - muy Feliz
+    - Estoy muy Feliz
+    - Feliz
+    - muy tFeliz
+    - es bueno
+    - muy bueno
+    - extremadamente Feliz
+    - tan Feliz
+    - muy Feliz
+
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+    - mi dia fue horrible
+    - Estoy triste
+    - no me siento muy bien
+    - Estoy decepcionado
+    - muy triste
+    - Estoy muy triste
+    - triste
+    - muy triste
+    - infeliz
+    - no es bueno
+    - no muy bueno
+    - extremadamente triste
+    - tan triste
+    - muy triste
+
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+    - ¿Eres un bot?
+    - ¿Eres un humano?
+    - ¿Estoy hablando con un bot?
+    - ¿Estoy hablando con un humano
