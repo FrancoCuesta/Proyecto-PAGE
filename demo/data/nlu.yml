@@ -1,5 +1,4 @@
 version: "3.1"
-
 nlu:
 - intent: greet
   examples: |
@@ -29,9 +28,9 @@ nlu:
     - Buenos días
     - buenas noches
     - buenas tardes
-
 - intent: goodbye
   examples: |
+    - good afternoon
     - cu
     - good by
     - cee you later
@@ -41,9 +40,10 @@ nlu:
     - have a nice day
     - see you around
     - bye bye
-    - see you later
+    - see you later- buenas tardes
+    - cu
     - bueno por
-    te veo luego
+    -te veo luego
     - buenas noches
     - adiós
     - adiós
@@ -51,7 +51,6 @@ nlu:
     - Ya nos veremos
     - adiós
     - te veo luego
-
 - intent: affirm
   examples: |
     - yes
@@ -61,11 +60,11 @@ nlu:
     - that sounds good
     - correct
     - sí
+    - y
     - Por supuesto
     - por supuesto
     - Eso suena bien
     - correcto
-
 - intent: deny
   examples: |
     - no
@@ -75,12 +74,15 @@ nlu:
     - don't like that
     - no way
     - not really
+    - vincent
+    - vincent-mcvincent
+    - no
+    - norte
     - nunca
     - No me parece
     - no me gusta eso
     - de ninguna manera
     - realmente no
-
 - intent: mood_great
   examples: |
     - perfect
@@ -108,36 +110,9 @@ nlu:
     - Voy a salvar el mundo.
     - súper emocionado
     - extremadamente bueno
-    tan tan perfecto
+    - tan tan perfecto
     - tan bueno
     - tan perfecto
-    - my day was beautifull
-    - I am happy
-    - I don't feel very well
-    - I am disappointed
-    - super happy
-    - I'm so happy
-    - happy
-    - very happy
-    - happy
-    - good
-    - very good
-    - extremly happy
-    - so happy
-    - mi dia fue hermoso
-    - Estoy Feliz
-    - me siento muy bien
-    - muy Feliz
-    - Estoy muy Feliz
-    - Feliz
-    - muy tFeliz
-    - es bueno
-    - muy bueno
-    - extremadamente Feliz
-    - tan Feliz
-    - muy Feliz
-
-
 - intent: mood_unhappy
   examples: |
     - my day was horrible
@@ -168,8 +143,6 @@ nlu:
     - extremadamente triste
     - tan triste
     - muy triste
-
-
 - intent: bot_challenge
   examples: |
     - are you a bot?
@@ -179,4 +152,22 @@ nlu:
     - ¿Eres un bot?
     - ¿Eres un humano?
     - ¿Estoy hablando con un bot?
-    - ¿Estoy hablando con un humano
+    - ¿Estoy hablando con un humano?
+- intent: request_names
+  examples: |
+    - I want to give you my data
+    - give data
+    - you need to know my data
+    - Do you know my data?
+    - I want to give you my data
+    - give data
+    - you need to know my data
+    - Do you know my data?
+    - quiero darte mis datos
+    - dar datos
+    - necesitas saber mis datos
+    - ¿Sabes mis datos?
+    - quiero darte mi datos
+    - dar datos
+    - necesitas saber mi datos
+    - ¿Sabes mis datos?

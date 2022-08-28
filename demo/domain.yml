@@ -1,34 +1,77 @@
-version: "3.1"
-
-intents:
-  - greet
-  - goodbye
-  - affirm
-  - deny
-  - mood_great
-  - mood_unhappy
-  - bot_challenge
-
-responses:
-  utter_greet:
-  - text: "¿Cómo estás?"
-
-  utter_cheer_up:
-  - text: "Aquí hay algo para animarte:"
-    image: "https://i.imgur.com/nGF1K8f.jpg"
-
-  utter_did_that_help:
-  - text: "¿Eso te ayudó?"
-
-  utter_happy:
-  - text: "¡Genial"
-
-  utter_goodbye:
-  - text: "Chau"
-
-  utter_iamabot:
-  - text: "Soy un bot."
-
+version: '3.1'
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
+
+intents:
+- greet
+- deny
+- request_names
+- goodbye
+- affirm
+- mood_great
+- mood_unhappy
+- bot_challenge
+
+forms:
+  name_form:
+    required_slots:
+      - first_name
+      - last_name
+      - edad
+
+slots:
+  first_name:
+    type: text
+    influence_conversation: true
+    mappings:
+      - type: from_text
+        conditions:
+         - active_loop: name_form
+           requested_slot: first_name
+  last_name:
+    type: text
+    influence_conversation: true
+    mappings:
+      - type: from_text
+        conditions:
+         - active_loop: name_form
+           requested_slot: last_name
+  edad:
+    type: text
+    influence_conversation: true
+    mappings:
+      - type: from_text
+        conditions:
+         - active_loop: name_form
+           requested_slot: edad
+responses:
+  utter_greet:
+  - text: ¿Cómo estás?
+  utter_cheer_up:
+  - text: 'Aquí hay algo para animarte:'
+    image: https://i.imgur.com/nGF1K8f.jpg
+  utter_did_that_help:
+  - text: ¿Eso te ayudó?
+  utter_happy:
+  - text: ¡Genial, continúa!
+  utter_goodbye:
+  - text: Chau
+  utter_iamabot:
+  - text: Spy un bot
+  utter_ask_first_name:
+  - text: ¿Cuál es tu primer nombre?
+  utter_ask_last_name:
+  - text: ¿Cual es tu apellido?
+  utter_ask_edad:
+  - text: ¿Cual es tu edad?
+  utter_submit:
+  - text: Ok. Gracias!
+  utter_slots_values:
+  - text: recordaré que tu nombre es {first_name} {last_name} y tienes {edad} años!
+
+actions:
+- utter_greet
+- utter_slots_values
+- utter_submit
+- validate_name_form

@@ -1,0 +1,36 @@
+[
+  {
+    "tag_name": "entity",
+    "ids_to_tags": {
+      "1": "B-asiento",
+      "2": "I-asiento",
+      "3": "L-asiento",
+      "4": "U-asiento",
+      "5": "B-cocina",
+      "6": "I-cocina",
+      "7": "L-cocina",
+      "8": "U-cocina",
+      "9": "B-comentarios",
+      "10": "I-comentarios",
+      "11": "L-comentarios",
+      "12": "U-comentarios",
+      "0": "O"
+    },
+    "tags_to_ids": {
+      "B-asiento": 1,
+      "I-asiento": 2,
+      "L-asiento": 3,
+      "U-asiento": 4,
+      "B-cocina": 5,
+      "I-cocina": 6,
+      "L-cocina": 7,
+      "U-cocina": 8,
+      "B-comentarios": 9,
+      "I-comentarios": 10,
+      "L-comentarios": 11,
+      "U-comentarios": 12,
+      "O": 0
+    },
+    "num_tags": 13
+  }
+]
